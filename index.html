@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lyrics Bs</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <main class="container">
-        <div id="contenido" class="contenido">
-            <h1>Letras de Canciones</h1>
-            <div class="contenedor">
-                    <div id="buscar" class="buscar">
-                        <div id="mensajes">
-                            
-                        </div>
-                            <h2>Búsqueda</h2>
-                            <form action="#" id="formulario-buscar">
-                                <div class="input">
-                                    <input type="text"  id="artista" placeholder="Escrbe el nombre del Artista" autofocus="autofocus">
-                                </div>
-                                <div class="input">
-                                    <input type="text" id="cancion" placeholder="Escribe la Canción">
-                                </div>
+      <div id="contenido" class="contenido">
+        <h1>Letras de Canciones</h1>
+        <div class="contenedor">
+          <div id="buscar" class="buscar">
+            <div id="mensajes"></div>
+            <h2>Búsqueda</h2>
+            <form action="#" id="formulario-buscar">
+              <div class="input">
+                <input
+                  type="text"
+                  id="artista"
+                  placeholder="Escrbe el nombre del Artista"
+                  autofocus="autofocus"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="cancion"
+                  placeholder="Escribe la Canción"
+                />
+              </div>
 
-                                <div class="input enviar">
-                                    <input id ="btn-enviar" type="submit" value="Buscar">
-                                </div>
-
-                            </form>
-                    </div>
-                    <div class="letra-resultado">
-                            <h2>Resultado</h2>
-                            <!-- agregar el trigger y target para copiar la canción -->
-                            <a class="copiar" data-clipboard-target="#resultado">Copiar La Cancion <span class="copy-ok">Listo! :)</span></a>
-                            <div class="titulo"></div>
-                            <!-- target -->
-                            <div id="resultado">
-                            </div>
-                    </div>
-            </div>
-    </div>
+              <div class="input enviar">
+                <input id="btn-enviar" type="submit" value="Buscar" />
+              </div>
+            </form>
+          </div>
+          <div class="letra-resultado">
+            <h2>Resultado</h2>
+            <!-- agregar el trigger y target para copiar la canción -->
+            <a class="copiar" data-clipboard-target="#resultado"
+              >Copiar La Cancion <span class="copy-ok">Listo! :)</span></a
+            >
+            <div class="titulo"></div>
+            <!-- target -->
+            <div id="resultado"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <div class="footer">
-        <h4 class="footer__texto">Desarrollado por <a class="enlace" href="#">Brian Santeliz</a></h4>
+      <h4 class="footer__texto">
+        Desarrollado por <a class="enlace" href="#">Brian Santeliz</a>
+      </h4>
     </div>
-    
+
     <script src="js/app.js" type="module"></script>
     <!-- agregar liberia para copiar la letra -->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-
-</body>
+  </body>
 </html>
