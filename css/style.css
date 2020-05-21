@@ -1,0 +1,222 @@
+html{
+    min-height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    background:#333;
+    color:#FF5722
+
+}
+h1 {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 450;
+    letter-spacing: 3px; 
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #FF5722;
+}
+h2 {
+    text-align: center;
+    color:white
+}
+
+.contenido {
+    background-color: #333;
+    max-width: 1100px;
+    margin:  0 auto;
+    height: 100%;
+    padding: 20px;
+}
+
+
+@media (min-width:768px) {
+    .contenedor {
+        display: flex;
+    }
+    .contenedor > div {
+        flex: 1 0 50%;
+    }
+}
+p{
+    color:white;
+
+}
+label{
+    color:white;
+    display: none
+
+}
+.formulario-busqueda p {
+    text-align: center;
+}
+.formulario-busqueda span {
+    color: red;
+}
+
+.input {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+#artista{
+    width: 100%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #ff8a65;
+    color: white;
+    height: 30px;
+    border-right: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+ #artista:active{
+    border:none
+}
+#cancion{
+    width: 100%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #ff8a65;
+    color: white;
+    height: 30px;
+    border-right: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.input label {
+    flex: 0 0 120px;
+    text-align: right;
+    margin-right: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input span {
+    color: red;
+}
+input{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.input input[type="text"] {
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    flex: 1;
+}
+.enviar {
+    justify-content: center!important;
+}
+.input input[type="submit"]{
+    background-color: #1176b1;
+    padding: .5rem 2rem;
+    color: white;
+    align-self: flex-end;
+    border:none;
+    transition: background-color .3s ease-in-out;
+    width: 25em;
+    border-radius: 20px;
+} 
+.input input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #1e8fd2;
+
+}
+
+.error {
+    padding: 1rem;
+    background-color: rgb(249, 121, 121) !important;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+#resultado {
+    white-space: pre-wrap;
+    padding: 2rem;
+    font-family: "Crimson Text", serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    margin: 20px;
+    color: white;
+}
+.titulo-cancion{
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 7em;
+}
+.copiar{
+   position: absolute;
+   margin-right: 5em;
+   position: absolute;
+   right: 0;
+   display: none;
+   position: absolute;
+   margin-right: 2em;
+   position: absolute;
+   right: 0;
+   display: none;
+   margin-top: 1em;
+   margin-top: 2.2em;
+    cursor:pointer;
+}
+
+.copy-ok{
+    display:none;
+    margin-top:.5em
+}
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;;
+  
+  }
+  
+  .footer {
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+  }
+  .footer__texto{
+    color: #FF5722; 
+    font-size: 18px;
+    font-weight: normal;
+    font-style: oblique;
+  }
+
+.enlace{
+    text-decoration: none;
+    color: rgb(62, 148, 228); 
+    
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto
+}
