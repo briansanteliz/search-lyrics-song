@@ -18,8 +18,6 @@ new ClipboardJS('.copiar');
         ui.mensaje('Todos los campos son obligatorios', 'error')
     }else{
         //consulta api
-        console.log(artista, cancion)
-
          const api = new Api(artista, cancion);
          api.queryCancion()
              .then(

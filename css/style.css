@@ -187,7 +187,7 @@ input{
 
 .copy-ok{
     display:none;
-    margin-top:.5em
+    text-align: center;
 }
   body {
     margin: 0px;
